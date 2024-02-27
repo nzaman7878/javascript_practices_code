@@ -1,3 +1,5 @@
+//Handling Multiple Promises Concurrently with Promise.all:
+
 const promise1 = Promise.resolve('Resolved Promise 1');
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
