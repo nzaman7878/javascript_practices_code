@@ -1,3 +1,5 @@
+// Function Declaration Hoisting:
+
 myFunction(); // Output: "Hello from myFunction!"
 
 function myFunction() {
