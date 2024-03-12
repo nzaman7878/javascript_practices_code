@@ -21,3 +21,14 @@ setTimeout(() => {
 
 console.log('End');
 
+/*
+In this example:
+
+We log 'Start' to the console.
+We initiate an asynchronous operation using setTimeout, which waits for 2000 milliseconds (2 seconds) before executing its callback function.
+We log 'End' to the console.
+After 2 seconds, the asynchronous operation completes, and its callback function ('Asynchronous operation completed') is pushed to the callback queue.
+The event loop continuously checks the call stack. When it finds it empty, it picks tasks from the callback queue and pushes them to the call stack for execution.
+Finally, the message 'Asynchronous operation completed' is logged to the console after 'End', demonstrating how the event loop handles asynchronous operations while keeping the call stack free for other tasks.
+This example highlights the non-blocking nature of asynchronous operations in JavaScript and how the event loop ensures that they are handled efficiently.
+ */
