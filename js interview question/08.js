@@ -37,3 +37,19 @@ function fetchData() {
       console.error('Error fetching data:', error.message);
     });
   
+    /*
+    
+ In this example:
+
+We define a function fetchData that returns a promise. Inside the promise constructor, 
+we simulate an asynchronous operation (e.g., fetching data from an API) using setTimeout.
+The promise resolves with the fetched data after a delay of 2 seconds (resolve(data)).
+We use the then() method to handle the resolved value (data) when the promise is fulfilled. 
+Inside the then() callback, we log the fetched data.
+We use the catch() method to handle any errors that occur during the execution of the promise.
+ If an error occurs, it is caught and logged to the console.
+Promises allow us to write asynchronous code in a more readable and manageable way, 
+making it easier to handle asynchronous operations and their outcomes. 
+They provide a clean and standardized way to work with asynchronous tasks in JavaScript.
+    
+    */
