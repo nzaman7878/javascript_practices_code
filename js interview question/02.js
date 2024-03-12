@@ -43,6 +43,13 @@ function operateOnNumbers(num1, num2, callback) {
 
 /* 
 
+In this example:
+
+We define a higher-order function operateOnNumbers that takes two numbers (num1 and num2) and a callback function (callback) as arguments. The callback function is applied to num1 and num2, and the result is returned by operateOnNumbers.
+We define two callback functions: add (to add two numbers) and multiply (to multiply two numbers).
+We use the higher-order function operateOnNumbers with the add callback to add two numbers (5 and 3), and with the multiply callback to multiply the same numbers.
+The results of the operations are logged to the console.
+This example illustrates how higher-order functions can be used to create more generic and reusable code by accepting different behaviors (callback functions) as arguments.
 
 
 */
