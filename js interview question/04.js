@@ -36,4 +36,12 @@ const animal = {
   // Accessing the new method from the child object
   dog.move();                   // Output: Move like an animal
 
-  
+  /* 
+  In this example:
+
+We create a parent object animal using an object literal. It contains properties type and sound, and a method makeSound().
+We create a child object dog using Object.create(animal), which sets the [[Prototype]] of dog to animal, establishing a prototype chain.
+The dog object inherits the type and makeSound() method from the animal object. We override the type and sound properties in dog.
+We access properties and methods from the dog object, which first checks if they exist on the object itself. If not found, JavaScript follows the prototype chain and looks for them in the animal object.
+We add a new method move() to the animal object after creating the dog object. Since dog inherits from animal, it also gains access to the newly added method.
+  */
