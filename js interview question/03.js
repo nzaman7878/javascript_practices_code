@@ -31,4 +31,17 @@ function outerFunction() {
   incrementCounter(); // Output: Counter value: 1
   incrementCounter(); // Output: Counter value: 2
   incrementCounter(); // Output: Counter value: 3
+
+  /* 
+  
+  In this example:
+
+We define an outer function called outerFunction that initializes a variable counter with the value 0.
+Inside outerFunction, we define an inner function called innerFunction that increments the counter variable each time it's called and logs its value to the console.
+The innerFunction has access to the counter variable even after outerFunction has finished executing because of closure.
+We call outerFunction and store the returned inner function in the variable incrementCounter.
+We then call incrementCounter multiple times, and each time it's called, the counter variable is incremented, and its value is logged to the console.
+This example demonstrates how closures allow inner functions to retain access to variables from their containing scope even after the outer function has returned. Closures are widely used in JavaScript for encapsulation, data privacy, and creating modular code.
+  
+  */
   
