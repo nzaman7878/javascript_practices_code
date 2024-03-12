@@ -37,4 +37,25 @@ function calculateVolume(length, width, height) {
   // Usage of the curried function
   const curriedVolume = curriedCalculateVolume(5)(3)(2);
   console.log('Volume of rectangular prism (Curried function):', curriedVolume); // Output: 30
+
   
+ /*
+ In this example:
+
+We start with a regular function calculateVolume that takes three arguments 
+(length, width, and height) and returns their product.
+
+We then define a curried function curriedCalculateVolume that takes a single argument
+ (length) and returns a function that takes another argument (width).
+ 
+  This inner function returns another function that takes the final argument (height),
+   and finally, it calculates and returns the volume using the provided arguments.
+When we use the regular function, we pass all arguments at once.
+
+When we use the curried function, we pass each argument one by one,
+ creating a chain of functions. The final function returns the volume using the provided arguments.
+
+Currying allows for greater flexibility and composability,
+ as you can create new functions by partially applying arguments
+  to existing functions. This makes code more modular and easier to understand and maintain.
+ */ 
