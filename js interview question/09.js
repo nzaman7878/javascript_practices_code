@@ -39,4 +39,17 @@ function fetchData() {
   
   // Usage of the fetchDataAsync function
   fetchDataAsync();
-  
+/*
+In this example:
+
+We define a function fetchData that returns a promise, just like in the previous example.
+We define an async function fetchDataAsync using the async keyword. Inside this function,
+ we use the await keyword to pause the execution and wait for the promise returned by fetchData to resolve. 
+This makes the asynchronous code appear sequential.
+We use a try/catch block to handle any errors that may occur during the execution of the async function. 
+If an error occurs, it is caught and logged to the console.
+We call the fetchDataAsync function to initiate the asynchronous operation.
+Async/await simplifies asynchronous code by eliminating the need for chaining .
+then() and .catch() methods, resulting in cleaner and more readable code. 
+It's widely used in modern JavaScript development for handling asynchronous tasks.
+*/  
