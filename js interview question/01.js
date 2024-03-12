@@ -43,3 +43,12 @@ function fetchUserDataPromise() {
   fetchUserDataAsync();
 
   
+
+
+  /* In this example:
+
+We have a function fetchUserDataPromise() that returns a Promise, simulating the asynchronous fetching of user data from an API after a delay of 2 seconds.
+We use Promises to handle the asynchronous operation. We chain a .then() to handle the resolved value (user data) and a .catch() to handle any errors that occur during the operation.
+We also have a function fetchUserDataAsync() that uses the async keyword to define an asynchronous function. Inside this function, we use await to wait for the Promise returned by fetchUserDataPromise() to resolve. This makes the code look more synchronous and easier to read.
+We call both fetchUserDataPromise() and fetchUserDataAsync() to demonstrate fetching user data asynchronously using Promises and async/await, respectively.
+This example showcases how Promises and async/await can be used to handle asynchronous operations in JavaScript, making code more readable and maintainable. */
